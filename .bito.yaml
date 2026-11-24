@@ -1,0 +1,10 @@
+custom_guidelines:
+  general:
+    - name: Naming rules
+      path: guidelines/general-naming.md
+    - name: Missing file test
+      path: guidelines/does-not-exist.md
+  per_language:
+    go:
+      name: Go error rules
+      path: guidelines/go-errors.md
