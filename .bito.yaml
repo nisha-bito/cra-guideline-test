@@ -1,0 +1,4 @@
+custom_guidelines:
+  general:
+    - name: Path traversal test
+      path: ../../etc/passwd
