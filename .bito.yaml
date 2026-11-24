@@ -1,14 +1,4 @@
 custom_guidelines:
   general:
-    - name: Rule set 1
-      path: guidelines/rule1.md
-    - name: Rule set 2
-      path: guidelines/rule2.md
-    - name: Rule set 3
-      path: guidelines/rule3.md
-    - name: Fourth file over the limit
-      path: guidelines/rule1.md
-  per_language:
-    go:
-      name: Oversized Go rules
-      path: guidelines/big.md
+    - name: Path traversal test
+      path: ../../etc/passwd
