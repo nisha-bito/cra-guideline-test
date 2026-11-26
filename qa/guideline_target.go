@@ -27,3 +27,14 @@ func SaveConfig(data []byte) {
 	_ = os.WriteFile("/tmp/config.json", data, 0644)
 	fmt.Printf("saved %d bytes\n", len(data))
 }
+
+// ReadFirstLine returns the first line of the file at path.
+func ReadFirstLine(path string) (string, error) {
+	f, err := os.Open(path)
+	if err == os.ErrNotExist {
+		return "", err
+	}
+	buf := make([]byte, 256)
+	n, _ := f.Read(buf)
+	return strings.SplitN(string(buf[:n]), "\n", 2)[0], nil
+}
